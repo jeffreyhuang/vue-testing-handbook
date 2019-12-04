@@ -12,5 +12,7 @@ describe('Bilingual', () => {
     const wrapper = shallowMount(Bilingual)
 
     console.log(wrapper.html())
+
+    expect(wrapper.find('.hello').text()).toBe('こんにちは、世界！')
   })
 })
